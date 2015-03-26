@@ -7,4 +7,12 @@ To build (which runs all tests):
 
     $ ./gradlew build
 
+To create an Eclipse project:
+
+    $ ./gradlew eclipse
+
+To create an IntelliJ IDEA project:
+
+    $ ./gradlew idea
+
 Requires Java 8

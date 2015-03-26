@@ -2,6 +2,7 @@ package dependencyinjection;
 
 import dependencyinjection.authentication.AuthenticationException;
 import dependencyinjection.authentication.Authenticator;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Chris Campo
@@ -10,7 +11,7 @@ public class LoginService {
 
     private final Authenticator authenticator;
 
-    public LoginService(final Authenticator authenticator) {
+    public LoginService(@NotNull final Authenticator authenticator) {
         this.authenticator = authenticator;
     }
 

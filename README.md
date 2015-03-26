@@ -15,4 +15,4 @@ To create an IntelliJ IDEA project:
 
     $ ./gradlew idea
 
-Requires Java 8
+Requires Java 7

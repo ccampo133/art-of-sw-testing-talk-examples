@@ -10,6 +10,8 @@ import static org.mockito.Mockito.*;
 
 /**
  * @author Chris Campo
+ *
+ * NOTE: These are not actual tests - I'm just using JUnit as a REPL here to demonstrate DI.
  */
 public class LoginServiceTest {
 
@@ -34,10 +36,13 @@ public class LoginServiceTest {
         loginService.login("foo", "bar");
     }
 
+    // Uncomment and set sourceCompatibility to 1.8 in build.gradle to use lambdas (and switch your JDK to 1.8)
+    /*
     @Test
     public void testLoginWithLambda() {
-        final LoginService loginService = new LoginService(
-                (un, pw) -> System.out.println("LAMBDA authentication: username = " + un + ", password = " + pw));
-        loginService.login("foo", "bar");
+       final LoginService loginService = new LoginService(
+               (un, pw) -> System.out.println("LAMBDA authentication: username = " + un + ", password = " + pw));
+       loginService.login("foo", "bar");
     }
+    */
 }

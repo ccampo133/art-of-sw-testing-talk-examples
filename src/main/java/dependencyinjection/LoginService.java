@@ -23,7 +23,6 @@ public class LoginService {
             e.printStackTrace();
             return;
         }
-
         System.out.println("Successfully authenticated.");
     }
 }

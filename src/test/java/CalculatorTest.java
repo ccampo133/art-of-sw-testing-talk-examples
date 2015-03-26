@@ -26,7 +26,7 @@ public class CalculatorTest {
 
         // Assert
         final int expected = 3;
-        assertEquals(expected, sum);
+        assertEquals("Incorrect sum", expected, sum);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class CalculatorTest {
         final int b = 4;
         final int product = calculator.multiply(a, b);
         final int expected = 8;
-        assertEquals(expected, product);
+        assertEquals("Incorrect product", expected, product);
     }
 
     @Test
@@ -44,14 +44,14 @@ public class CalculatorTest {
         final int b = 5;
         final int quotient = calculator.divide(a, b);
         final int expected = 2;
-        assertEquals(expected, quotient);
+        assertEquals("Incorrect quotient", expected, quotient);
     }
 
     @Test
     public void testMemory() {
         // Multiple asserts can be OK in some circumstances
-        assertEquals(0, calculator.getMemory());
+        assertEquals("Memory not initialized properly", 0, calculator.getMemory());
         calculator.setMemory(10);
-        assertEquals(10, calculator.getMemory());
+        assertEquals("Memory not set properly", 10, calculator.getMemory());
     }
 }

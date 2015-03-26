@@ -61,11 +61,6 @@ target/
 # Gradle
 .gradle/
 
-# Jenkins
-wrapper/
-caches/
-native/
-
 # ActiveMQ
 activemq-data
 

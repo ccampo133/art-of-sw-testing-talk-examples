@@ -1,0 +1,79 @@
+# Eclipse
+.metadata
+#bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.project
+tmp/**
+tmp/**/*
+.classpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# TeXlipse plugin
+.texlipse
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Java
+*.class
+
+# Package Files
+*.jar
+!install/unix/lib/*.jar
+*.war
+*.ear
+
+# Intellij
+*.iml
+*.ipr
+*.iws
+*.ids
+.idea/
+.springBeans
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+
+# Jenkins
+wrapper/
+caches/
+native/
+
+# ActiveMQ
+activemq-data
+
+# Misc
+atlassian-ide-plugin.xml
+build/
+logs/
+*.log
+
+!gradle/wrapper/gradle-wrapper.jar
+/bin
